@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
+import collections
 from googlemaps import GoogleMapsScraper
 from datetime import datetime, timedelta
 import argparse
 import csv
 from termcolor import colored
 import time
+
+collections.Callable = collections.abc.Callable
 
 
 ind = {'most_relevant' : 0 , 'newest' : 1, 'highest_rating' : 2, 'lowest_rating' : 3 }
